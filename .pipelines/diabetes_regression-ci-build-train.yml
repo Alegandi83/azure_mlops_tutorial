@@ -195,7 +195,7 @@ stages:
       name: WebAppDeploy
       displayName: 'Azure Web App on Container Deploy'
       inputs:
-        azureSubscription: 'AzureResourceConnection'
+        azureSubscription: 'gandi_devops_service_connection'
         appName: '$(WEBAPP_DEPLOYMENT_NAME)'
         containers: '$(IMAGE_LOCATION)'
     - task: AzureCLI@1
